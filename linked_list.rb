@@ -94,9 +94,8 @@ class LinkedList
 
       i += 1
     end
-  end
-  # private
-
+  end  
+  
   def traverse_list
     curr = @head
     until curr.nil?
@@ -104,6 +103,7 @@ class LinkedList
       curr = curr.next_node
     end
   end
+  # private
 
   def insert_between(new_node, node_before, node_after)
     new_node.next_node = node_after
